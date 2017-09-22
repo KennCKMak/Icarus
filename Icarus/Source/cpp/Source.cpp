@@ -14,6 +14,7 @@ bool IsOnlyInstance(LPCTSTR gameTitle);
 bool CheckStorage(const DWORDLONG diskSpaceNeeded);
 bool CheckMemory(const DWORDLONG physicalRAMNeeded, const DWORDLONG virtualRAMNeeded);
 DWORD ReadCPUSpeed();
+void CheckCPUArchitecture();
 
 int main() {
 	InitInstance();
@@ -30,6 +31,7 @@ void InitInstance() {
 		return;
 
 	std::cout << "CPU Speed: " << ReadCPUSpeed() << std::endl;
+	CheckCPUArchitecture();
 		
 }
 
@@ -114,4 +116,15 @@ DWORD ReadCPUSpeed() {
 			&dwMHz, &BufSize);
 	}
 	return dwMHz;
+}
+
+void CheckCPUArchitecture() {
+	bool Win32;
+#if defined(_WIN64)
+	Win32 = false;
+#elif defined(_WIN32)
+	Win32 = true;
+#endif
+	std::cout << "CPU Architecture = " << (Win32 == true ? "32 bit" : "64 bit") << std::endl;
+
 }

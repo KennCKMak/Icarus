@@ -1,4 +1,4 @@
 ﻿  Source.cpp
-c:\users\kenneth\documents\github\icarus\icarus\source\cpp\source.cpp(90): warning C4244: 'initializing': conversion from 'const DWORDLONG' to 'unsigned int', possible loss of data
+c:\users\kenneth\documents\github\icarus\icarus\source\cpp\source.cpp(92): warning C4244: 'initializing': conversion from 'const DWORDLONG' to 'unsigned int', possible loss of data
   Icarus.vcxproj -> C:\Users\Kenneth\Documents\GitHub\Icarus\Icarus\Source\sln\\..\..\Game\Win32Debug\IcarusWin32Debug\.exe
   Icarus.vcxproj -> C:\Users\Kenneth\Documents\GitHub\Icarus\Icarus\Source\sln\\..\..\Game\Win32Debug\IcarusWin32Debug\.pdb (Partial PDB)
