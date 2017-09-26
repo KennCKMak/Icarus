@@ -20,6 +20,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\cpp\Source.cpp" />
+    <ClCompile Include="..\cpp\SpecialAbilitiesComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\h\AbilitiesInterface.h" />
+    <ClInclude Include="..\h\SpecialAbilitiesComponent.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{3BE5D641-7C75-4538-BC03-69C142B68A3D}</ProjectGuid>
